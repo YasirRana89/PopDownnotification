@@ -1,0 +1,321 @@
+
+.section-popdown {
+    /* height: 300px; */
+    /* margin-top: 50px; */
+}
+.popdown-title{
+    font-size: 30px;
+    color: #e99e7c;
+}
+.popdown-description{
+    font-size: 16px;
+    margin-left: 0px;
+}
+.popdown-button-wrap {
+    width: 100%;
+    height: 90%;
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #e99e7c;
+}
+.popdown-button-wrap a{
+  color: #ffffff;
+}
+
+.popdown-button {
+    font-weight: 400;
+    white-space: nowrap;
+}
+.popdown-close-x {
+    float: right;
+    padding-top: 5px;
+    font-size: 50px;
+    color: #717171;
+    font-weight: 100;
+}
+.popdown--2 {
+    padding: 40px;
+    line-height: 1.3;
+    font-size: 20px;
+}
+
+.popdown {
+    position: relative;
+    padding: 30px;
+    z-index: 3;
+    display: none;
+    background-color: rgba(238,238,238,0.5);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #777;
+    font-family: "Source Sans Pro",sans-serif;
+    transition: padding-top .5s;
+}
+@media (min-width: 809px){
+.popdown--1 .popdown__close, .popdown--2 .popdown__close {
+    color: #777;
+    line-height: 30px;
+    font-size: 5rem;
+}}
+
+@media (min-width: 809px){
+.popdown--2 .popdown__close {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    color: #777;
+}}
+.popdown__close {
+    display: block;
+    z-index: 4;
+}
+.popdown--1 .popdown__close-words, .popdown--2 .popdown__close-words {
+    display: none;
+}
+.popdown__close-x {
+    font-weight: 300;
+}
+
+
+.popdown--2 .popdown__container {
+    position: relative;
+    display: table;
+}
+.popdown--2 .popdown__container {
+    display: block;
+    margin: 0 auto;
+    
+}
+.popdown__container {
+    z-index: 3;
+}
+.popdown--2 .popdown__image {
+    display: table-cell;
+    vertical-align: middle;
+    width: 36%;
+}
+
+.popdown__image {
+    max-width: 100%;
+}
+.popdown__image-asset {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 4px solid #fff;
+}
+.popdown--2 .popdown__content {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1.9em;
+}
+.popdown--2 .popdown__title {
+    line-height: 1;
+    font-size: 2em;
+}
+
+.popdown__title {
+    color: #e99e7c;
+}
+.popdown__title {
+    color: #e99e7c;
+    line-height: 1.2;
+    font-family: "Source Serif Pro",serif;
+    font-weight: 400;
+}
+.popdown--2 .popdown__description {
+    margin-top: .7em;
+}
+
+.popdown__description {
+    font-weight: 300;
+    line-height: 1.3em;
+}
+.popdown--2 .popdown__button-wrap {
+    margin-top: 1.25em;
+}
+.popdown__button {
+    background-color: #e99e7c;
+}
+
+.popdown__button {
+    font-weight: 400;
+    white-space: nowrap;
+}
+.popdown__button {
+    text-decoration-color: none;
+    transition: .1s ease opacity;
+    display: inline-block;
+    background: #e99e7c;
+    padding: 10px 30px;
+    color: #fff;
+    letter-spacing: .2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .83em;
+    font-weight: 300;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+.popdown__button:hover{
+    background-color: #d19275;
+}
+
+
+.popdown--1 {
+    padding: 20px 40px;
+    line-height: 1.1;
+    font-size: 18px;
+}
+.popdown {
+    position: relative;
+    z-index: 3;
+    padding: 30px;
+    display: none;
+    background-color: rgba(238,238,238,0.5);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #777;
+    font-family: "Source Sans Pro",sans-serif;
+    transition: padding-top .5s;
+}
+@media (min-width: 809px){
+.popdown--1 .popdown__close, .popdown--2 .popdown__close {
+    color: #777;
+    line-height: 30px;
+    font-size: 5rem;
+}}
+
+@media (min-width: 809px){
+.popdown--1 .popdown__close {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: 30px;
+}}
+.popdown__close {
+    display: block;
+    z-index: 4;
+}
+.popdown--1 .popdown__close-words, .popdown--2 .popdown__close-words {
+    display: none;
+}
+.popdown__close-x {
+    font-weight: 300;
+}
+.popdown--1 .popdown__container {
+    position: relative;
+    display: table;
+}
+
+.popdown--1 .popdown__container {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+}
+.popdown__container {
+    z-index: 3;
+}
+.popdown--1 .popdown__content {
+    display: table;
+    width: 100%;
+}
+.popdown--1 .popdown__title {
+    display: table-cell;
+    vertical-align: middle;
+    width: 18.6%;
+    border: 1px solid #bbb;
+    border-width: 0 1px 0 0;
+    padding-right: .8em;
+    text-align: right;
+    font-size: 1.33em;
+}
+
+.popdown__title {
+    color: #e99e7c;
+}
+.popdown__title {
+    color: #e99e7c;
+    line-height: 1.2;
+    font-family: "Source Serif Pro",serif;
+    font-weight: 400;
+}
+.popdown--1 .popdown__description {
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.popdown__description {
+    font-weight: 300;
+    line-height: 1.3em;
+}
+.popdown--1 .popdown__button-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    width: 1px;
+    padding-left: .8em;
+    text-align: right;
+}
+
+
+@media (max-width: 420px){
+
+    .popdown-close-x {
+        float: right;
+        padding-top: 5px;
+        font-size: 25px;
+        position: absolute;
+        right: 14px;
+        top: 0;
+    }
+    .popdown-description {
+        margin-left: 0px;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .popdown-title {
+        font-size: 1.9em;
+        color: #e99e7c;
+    }
+    .popdown-button-wrap {
+        height: 100%;
+        font-size: 15px;
+        padding-top: 0px;
+        text-align: center;
+        background-color: #e99e7c;
+    }
+    .popdown__button{padding:10px 65px }
+}
+
+@media (max-width: 680px){
+
+.popdown__image-asset {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 4px solid #fff;
+}
+.popdown--2 .popdown__title {
+    line-height: 1;
+    font-size: 1.2em;
+    
+}
+.popdown--2 .popdown__description {
+    margin-top: .7em;
+    font-size: 10px;
+    font-size: .75em;
+    /* margin-right: 52px; */    
+}
+.popdown--2 .popdown__content{padding-left:15px }
+.popdown__button{padding:10px 18px }
+}

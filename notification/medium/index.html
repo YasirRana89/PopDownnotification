@@ -1,0 +1,56 @@
+<div id="popdown" class=" popdown popdown--2 has-logo has-image" data-show-popdown="true" data-js-layout="2"
+style="display: block;">
+<a href="javascript:void(0);" class="popdown__close" data-js-hook="popdown-close">
+    <span class="popdown__close-words">Proceed To Website</span>
+    <span class="popdown__close-x" onclick="closePopDown(this)">×</span>
+</a>
+<div class=" popdown__container container">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="popdown__image">
+                <img src="http://prod.popdown.jonahsystems.com/assets/images/cache/living-room1-12f64e3423f8f767387732cf0635735a.jpg"
+                    alt="1/2 Off Rent" class="popdown__image-asset">
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-12 popdown__content">
+            <div class="popdown__title">1/2 Off Rent</div>
+            <div class="popdown__description">
+                Get 1/2 of your first month's rent when<br> you sign a lease in
+                August! Shop <br>floorplans or call now for details.
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12 popdown__content">
+            <div class="popdown__button-wrap">
+                <a href="http://prod.popdown.jonahsystems.com/floorplans/" target="_self"
+                    class="popdown__button">Find an Apartment</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<button class="btn btn-default popdown-opener" onclick="openPopDown(this)" style="display: none">Open</button>
+
+<script>
+
+    function closePopDown(me){
+
+        if($(me).hasClass('closed')){
+            $('.popdown-opener').hide();
+            $('#popdown').slideDown(100);
+            $(me).addClass('closed').removeClass('open');
+        }else{
+            $('#popdown').slideUp(100);
+            $(me).addClass('open').removeClass('closed');
+            $('.popdown-opener').show();
+        }				
+    }
+
+    function openPopDown(me){
+
+            $(me).hide();
+            $('#popdown').slideDown(100);
+            $('.popdown__close-x').addClass('open').removeClass('closed');
+            
+    }			
+
+</script>

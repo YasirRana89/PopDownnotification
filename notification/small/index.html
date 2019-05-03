@@ -1,0 +1,55 @@
+
+
+		<!-- section-popdown -->
+		<div class="section-popdown">
+            <div id=popdown class="popdown popdown-1" data-show-popdown="true" data-js-layout="1" style="display: block";>
+                <div class="container popdown-container">
+                        <a href="javascript:void(0);" class="popdown__close"  data-js-hook="popdown-close">
+                                <span class="popdown-close-x" onclick="closePopDown(this)">x</span>
+                              </a>
+                    
+                    <div class="row">
+                        <div class="col-md-3">
+                        <div class="popdown-title">1/2 off rent</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="popdown-description">Get 1/2 of your first month's rent when you sign a lease in August! Shop floorplans or call now for details.</div></div>
+                        <div class="col-md-3 col-sm-12 popdown__content">
+                                <div class="popdown__button-wrap">
+                                    <a href="http://prod.popdown.jonahsystems.com/floorplans/" target="_self"
+                                        class="popdown__button">Find an Apartment</a>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <button class="btn btn-default popdown-opener" onclick="openPopDown(this)" style="display: none">Open</button>
+        <!-- section-popdown -->
+   
+        
+        <script>
+
+            function closePopDown(me){
+
+                if($(me).hasClass('closed')){
+                    $('.popdown-opener').hide();
+                    $('#popdown').slideDown(100);
+                    $(me).addClass('closed').removeClass('open');
+                }else{
+                    $('#popdown').slideUp(100);
+                    $(me).addClass('open').removeClass('closed');
+                    $('.popdown-opener').show();
+                }				
+            }
+
+            function openPopDown(me){
+
+                    $(me).hide();
+                    $('#popdown').slideDown(100);
+                    $('.popdown__close-x').addClass('open').removeClass('closed');
+                    
+            }			
+
+        </script>
+   
